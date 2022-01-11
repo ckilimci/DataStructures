@@ -31,6 +31,12 @@ int main(int argc, char const *argv[])
 
     list->print();
 
+    list->removeNode(15);  // invalid data
+    list->removeNode(20);  // regular data
+    list->removeNode(40);  // head data
+    list->removeNode(25);  // tail data
+
+    list->print();
 
     return 0;
 }
